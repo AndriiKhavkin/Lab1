@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Lab1
 {
@@ -8,7 +9,9 @@ namespace Lab1
         {
             Random rnd = new Random(DateTime.Now.Millisecond);
             int value1 = rnd.Next(1, 7);
-            int value2 = rnd.Next(1, 7);
+            Thread.Sleep(5);
+            Random rnd2 = new Random(DateTime.Now.Millisecond);
+            int value2 = rnd2.Next(1, 7);
             Console.WriteLine("Game: Player1 threw away:" + value1 + " Player 2 threw away:" + value2);
             if (value1 > value2)
             {

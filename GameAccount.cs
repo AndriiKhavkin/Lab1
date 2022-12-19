@@ -68,7 +68,7 @@ namespace Lab1
 
         public void ShowHistory()
         {
-            Console.WriteLine("\nGame history: ");
+            Console.WriteLine("\nGame history of " +  UserName + ": ");
             foreach (GameHistory History in GamesHistory)
             {
                 History.ShowInfo();

@@ -5,7 +5,7 @@ namespace Lab1
     public class GameHistory
     {
         private static int Games = 0;
-        private int GameID; //індекс гри
+        private int GameID;
         private GameAccount FirstPlayer;
         private GameAccount SecondPlayer;
         private bool didWinFirstPlayer;
@@ -26,7 +26,7 @@ namespace Lab1
 
         public void ShowInfo()
         { 
-            Console.Write("Game ID: " + GameID + "  Player One: " + FirstPlayer.GetUserName() + "  Player Two: " + SecondPlayer.GetUserName() + "  Rating for the game: " + GameRating + "  Winner of the game is ");
+            Console.Write("Game ID: " + GameID + "  Player One: " + FirstPlayer.GetUserName() + "  Player Two: " + SecondPlayer.GetUserName() + "  Rating for the game: " + GameRating + "  Winner of the game was ");
             if (didWinFirstPlayer)
             {
                 Console.WriteLine(FirstPlayer.GetUserName());
