@@ -41,6 +41,7 @@
     <ItemGroup>
         <Compile Include="GameAccount.cs" />
         <Compile Include="GameHistory.cs" />
+        <Compile Include="GameLogic.cs" />
         <Compile Include="GloballInfo.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
